@@ -103,3 +103,27 @@ Blog
 Destacados
 Institucional
 Contacto
+
+header>img+nav>li*6>a
+<header>
+        <img src="" alt="">
+        <nav>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+        </nav>
+    </header>
+
+REM- Medida relativa con mayor nivel de jerarquia, se adapta a las medidas de los diferentes navegadores
+EM- Medida Efimera y relativa, varia en relacion a un raiz, root.
+
+REM proviene de “Root ephemeral” que en traducción técnica es la “variable de la raíz”, o sea, es una variable en relación de la propiedad font-size de la etiqueta raiz (HTML). EM proviene de “ephemeral” que significa “variable” y es una variable de la propiedad font-size de la etiqueta madre.
+
+PNG- poco compacto, Mantiene la calidad de la imagen, tamaño elevado 29.6 KB, fondo transparente, usado en desarrollo web.
+    JPG- muy compacto, calidad de la imagen es inferior, tamaño leve 9.29 KB, lleva un fondo
+        GIF- calidad de imagen baja, uso limitado, tamño depende de la calidad de la imagen 199 KB
+            SVG- imagenes vectoriales en 2 dimensiones, mas leve, tamaño variable 4.26 KB, muy usado en desarrollo web, no se pixela tanto al acercar o aumentar tamaño.
+            Muy usado en logos, iconos o ilustraciones mas sencillas.

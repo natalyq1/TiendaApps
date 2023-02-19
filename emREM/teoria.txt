@@ -1,0 +1,46 @@
+Medidas Relativas en el CSS
+Ems (em)
+Esta unidad cambia a los elementos hijos de acuerdo con el tamaño de fuente (font-size) del elemento padre.
+Por lo tanto, de acuerdo con el tamaño de la fuente utilizada en un determinado elemento, ¡los elementos hijos cambiarán de tamaño para obedecer la referencia a ese tamaño de fuente!
+Es para el mantenimiento del componente en su conjunto, sin tener que sufrir cambios de valores de todas las partes del componente.
+
+El último punto que debemos tener en cuenta al usar el em es que cuando usamos esta medida, tenemos que considerar el font-size de todos los elementos padre. Por ejemplo, si tuviéramos una tercera div más interna en nuestro ejemplo anterior y configuramos el tamaño de fuente en 2em, en este caso, estos 2em serían 64px, ¡una vez que el font-size del elemento padre se ha establecido en 32px (2em)! ¿Atrapaste la idea?
+
+Esto tiende a complicarse cuando hablamos de 5, 6, 7 divs anidadas, ¡probablemente no será muy entretenido calcular esto! 
+
+Rems (rem, "root em")
+El REM viene como sucesor del EM y ambos comparten la misma lógica operativa (font-size), pero la forma de implementación es diferente. Mientras que el em está directamente relacionado con el tamaño de fuente del elemento padre, el rem está relacionado con el tamaño de fuente del elemento root (raíz), en este caso, la tag.
+
+El hecho de que el rem se relaciona con el elemento raíz soluciona ese problema que teníamos con varias divs (elementos) anidados, ya que no habrá esta "herencia" de tamaños, ¿recuerdas? Es decir, no necesitaremos tener dolor de cabeza al tener que realizar cálculos, ya que estamos basados en la etiqueta raíz.
+
+Por ejemplo, sabemos que la tag html es la tag raíz de todo documento html. Dicho esto, si definimos que el font-size de este elemento será de 18 px, por lo que 1rem = 18px, 2rem = 36px y así sucesivamente... Por lo general, los navegadores especifican el tamaño de fuente predeterminado para el elemento root (raíz), 16px, ¡así que guárdelo en su corazón! Aun siendo esta unidad más tranquila para trabajar, no se usaba mucho para el diseño responsivo, que al principio puede sonar un poco extraño...
+
+******************
+Hay una tercera opinión sobre todo esto. Esta solución usa px, em y rem de una manera bien definida. La idea es definir el font-size del elemento root en píxeles, módulos usando rem y elementos interiores a los módulos usando em, facilitando la manipulación del tamaño global que naturalmente escalará el tamaño de los módulos (usando rem) y estos a su vez, escalarán los elementos interiores (que usan em y se refieren al elemento padre).
+
+***********************
+Vw (viewport widht)
+https://css-tricks.com/fun-viewport-units/
+Esta medida es parte de las medidas más actuales y futuras del CSS. Viewport units.
+
+Como está escrito en el título, vw significa viewport width, pero ¿qué es viewport?
+
+Viewport no es más que el área visible de una página web para su usuario, este viewport puede variar según el dispositivo, siendo más pequeña en móviles y más grande en computadoras desktops.
+
+Volviendo a nuestro querido vw, esta unidad está directamente relacionada con el ancho de la viewport, donde 1vw representa 1% del tamaño del ancho de esa área visible. La diferencia entre vw y el % es muy similar a la diferencia entre em y rem, dónde el % es relativo al contexto local del elemento y el vw es relativo al tamaño total del ancho de la viewport del usuario.
+
+Vh (viewport height)
+https://css-tricks.com/fun-viewport-units/
+Esta unidad funciona de la misma forma que la vw, pero esta vez, la referencia será la altura y no el ancho. Hay varios ejemplos prácticos e interesantes del uso de estas dos unidades.
+
+Vmin (viewport minimun)
+El vmin usará como base la dimensión más pequeña de la viewport (altura x ancho)
+
+Imagine que estamos trabajando con una viewport de 1600 px de altura y 900 px de ancho. En ese caso, 1vmin tendrá el valor de 9px (¡1% de la dimensión más pequeña!); si tenemos 100vmin, ¡esto será igual a 900px! Interesante ¿verdad?
+
+En el caso anterior, la dimensión más pequeña era el ancho, pero si tuviéramos 300px de altura y 1400px de ancho, ¡nuestro valor de referencia sería 300px! ¡Siempre la menor dimensión!
+
+Vmax (viewport maximum)
+Siguiendo la misma base lógica que la unidad anterior, el vmax tendrá como valor de referencia la dimensión más grande de la viewport. Es decir, usando el mismo ejemplo, si tenemos 1600 px de altura y 900 px de ancho,¡1vmax será equivalente a 16px!
+
+En el segundo ejemplo, ocurrirá la misma inversión, con 300px de altura y 1400px de ancho, 1vmax será equivalente a 14px. Esta vez, ¡siempre será la mayor dimensión!

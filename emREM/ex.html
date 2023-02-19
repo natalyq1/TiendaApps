@@ -1,0 +1,28 @@
+<style>
+    #div{
+        font-size: 16px;
+    }
+
+    #hijo{
+        font-size: 1.2ex;  /*equivalente a 12px*/
+    }
+    p{
+    font-size: 2.4ex; /*equivalente a 24px*/
+    }
+</style>
+
+<html>
+    <div id="padre">
+        div padre
+        <div id="hijo">
+            div hijo
+        </div>
+        <p>24 pixeles</p>
+    </div>
+</html>
+
+<!--
+    Esta unidad no está relacionada con el tamaño de la fuente (font-size), sino con qué fuente se está utilizando en ese momento (font-family), más específicamente con el tamaño del carácter x de esta fuente en cuestión (x-height).
+
+¿Cómo sabe el navegador este valor? Este valor puede venir directamente con la fuente, el navegador puede medir el carácter en minúscula (lower case) y si estos dos no funcionan, el navegador estipula un valor de 0.5em para 1ex.
+-->

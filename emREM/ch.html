@@ -1,0 +1,33 @@
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+    #div{
+        font-size: 16px;
+        font-family: 'Courier Prime', monospace;
+    }
+
+    #hijo{
+        font-family: 'Roboto', sans-serif;
+    }
+    p{
+        font-family: 'Mynerve', cursive;
+    }
+</style>
+
+<html>
+    <div id="padre">
+        Como podemos analizar, la tipografía
+        <div id="hijo">
+            Como podemos analizar, la tipografía
+        </div>
+        <p>Como podemos analizar, la tipografía</p>
+    </div>
+</html>
+
+<!--
+    La regla de 1ch = 1 carácter se aplica sólo si la fuente utilizada es monospace (ancho fijo). Fuentes con ancho variable, cualquier carácter puede ser más ancho o menos ancho que cero ("0"), como podemos ver en la siguiente imagen:
+
+
+Como podemos analizar, la tipografía Courier (monospace) obedece a la regla anterior, ¡pero las otras dos no! Lo que podemos tomar después de las observaciones es que normalmente 1ch es 20% - 30% más amplio, pero esto no es una verdad absoluta y debe observarse para cada fuente que desees aplicar.

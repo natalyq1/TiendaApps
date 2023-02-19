@@ -1,0 +1,24 @@
+<style>
+    #div{
+        font-size: 16px;
+    }
+
+    #hijo{
+        font-size: 2em;
+    }
+</style>
+
+<div id="padre">
+    div padre
+    <div id="hijo">
+        div hijo
+    </div>
+    <div id="hijo">
+        div hijo
+    </div>
+</div>
+<!--
+    En este caso, para la div más interna (id = hijo), 1em será igual a 16px, siguiendo la lógica, 2em será igual a 32px y así sucesivamente. ¡También podemos poner valores como 1.5! En nuestro caso, 1.5em será igual a 24px. Al expresar tamaños como margin y padding utilizando em, esto significa que estarán relacionados con el tamaño de fuente del elemento padre.
+
+El último punto que debemos tener en cuenta al usar el em es que cuando usamos esta medida, tenemos que considerar el font-size de todos los elementos padre. Por ejemplo, si tuviéramos una tercera div más interna en nuestro ejemplo anterior y configuramos el tamaño de fuente en 2em, en este caso, estos 2em serían 64px, ¡una vez que el font-size del elemento padre se ha establecido en 32px (2em)! ¿Atrapaste la idea?
+-->

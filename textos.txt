@@ -117,10 +117,64 @@ header>img+nav>li*6>a
         </nav>
     </header>
 
+
+section.destacados.container>h2.destacados__titulo+a*2>figure.destacados__panel>img.destacados__panel-imagen+figC.destacados__panel-texto+a.destacados__boton
+
+<section class="destacados container">
+            <h2 class="destacados__titulo"></h2>
+            <a href="">
+                <figure class="destacados__panel">
+                    <img src="" alt="" class="destacados__panel-imagen">
+                    <figC class="destacados__panel-texto"></figC>
+                    <a href="" class="destacados__boton"></a>
+                </figure>
+            </a>
+            <a href="">
+                <figure class="destacados__panel">
+                    <img src="" alt="" class="destacados__panel-imagen">
+                    <figC class="destacados__panel-texto"></figC>
+                    <a href="" class="destacados__boton"></a>
+                </figure>
+            </a>
+        </section>
+
+
+section.destacados.container>h2.destacados__titulo+(a*2>figure.destacados__panel>img.destacados__panel-imagen+figC.destacados__panel-texto)+a.destacados__boton
+
+<section class="destacados container">
+            <h2 class="destacados__titulo"></h2>
+            <a href="">
+                <figure class="destacados__panel">
+                    <img src="" alt="" class="destacados__panel-imagen">
+                    <figC class="destacados__panel-texto"></figC>
+                </figure>
+            </a>
+            <a href="">
+                <figure class="destacados__panel">
+                    <img src="" alt="" class="destacados__panel-imagen">
+                    <figC class="destacados__panel-texto"></figC>
+                </figure>
+            </a>
+            <a href="" class="destacados__boton"></a>
+        </section>
+        
+
+
+MEDIDAS RELATIVAS
 REM- Medida relativa con mayor nivel de jerarquia, se adapta a las medidas de los diferentes navegadores
 EM- Medida Efimera y relativa, varia en relacion a un raiz, root.
 
-REM proviene de “Root ephemeral” que en traducción técnica es la “variable de la raíz”, o sea, es una variable en relación de la propiedad font-size de la etiqueta raiz (HTML). EM proviene de “ephemeral” que significa “variable” y es una variable de la propiedad font-size de la etiqueta madre.
+--REM --padre--proviene de “Root ephemeral” que en traducción técnica es la “variable de la raíz”, o sea, es una variable en relación de la propiedad font-size de la etiqueta raiz (HTML). 
+--EM--hijo-- proviene de “ephemeral” que significa “variable” y es una variable de la propiedad font-size de la etiqueta madre. El segundo punto es sin duda, la facilidad para crear layouts fluidos y responsivos
+
+
+MEDIDAS ABSOLUTAS
+--PT-- puntos--
+--CM-- centimetros--
+--MM-- milimetros--
+Esto se debe usar como medida para la tipografia a la hora de imprimir, hojas de estilo para impresion, no para la estilizacion en pantalla
+
+--VIEWPORT-unidades relativas, esta hace que ocupe toda la pantalla. WIDTH:100VW--Esta enfocada en la largura de la pantalla en pixeles
 
 PNG- poco compacto, Mantiene la calidad de la imagen, tamaño elevado 29.6 KB, fondo transparente, usado en desarrollo web.
     JPG- muy compacto, calidad de la imagen es inferior, tamaño leve 9.29 KB, lleva un fondo

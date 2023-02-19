@@ -181,3 +181,9 @@ PNG- poco compacto, Mantiene la calidad de la imagen, tamaño elevado 29.6 KB, f
         GIF- calidad de imagen baja, uso limitado, tamño depende de la calidad de la imagen 199 KB
             SVG- imagenes vectoriales en 2 dimensiones, mas leve, tamaño variable 4.26 KB, muy usado en desarrollo web, no se pixela tanto al acercar o aumentar tamaño.
             Muy usado en logos, iconos o ilustraciones mas sencillas.
+
+
+MEDIA QUERIES
+https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+Permiten crear páginas con estilos diferentes en el mismo archivo CSS por muchas condiciones diferentes.
+tablet= 768px

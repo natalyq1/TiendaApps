@@ -19,10 +19,8 @@
 
     margin-bottom: 1.25rem;
 }
-
-.contacto__boton {
-    color: var(--boton-rojo);
-    border-color: var(--boton-rojo);
+.contacto a {
     margin-top: 1.25rem;
-
+    color: var(--background-blanco);
+    background-color: var(--boton-rojo);
 }
